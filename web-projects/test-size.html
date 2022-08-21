@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>这飘雨的季节....</title>
+    <style>
+      .div2 {
+        text-shadow: 5px 5px 5px #9f6e6e;
+      }
+      img {
+        border-radius: 50%;
+        box-shadow: 10px 10px rgb(255, 255, 255);
+      }
+      .toubu {
+        grid-area: header;
+      }
+      .dibu {
+        grid-area: footer;
+      }
+      .zhongbu {
+        grid-area: main;
+        width: 768px;
+      }
+      .grid-container {
+        grid:
+          "header header header header header"
+          "main main main main main"
+          "footer footer footer footer footer";
+        display: grid;
+        grid-gap: 0px;
+        background-color: rgb(77, 69, 69);
+        padding: 0px;
+        width: 768px;
+        height: 1366px;
+      }
+      .grid-container > div {
+        background-color: rgba(189, 186, 158, 0.955);
+        text-align: center;
+        padding: 0px 0;
+        font-size: 30px;
+        font-family: "仿宋";
+        font-style: unset;
+        letter-spacing: 1cm;
+      }
+    </style>
+  </head>
+  <link href="styles/style.css" rel="stylesheet" />
+  <body>
+    <div class="grid-container">
+      <div class="toubu">
+        <h1 class="div2">欢迎来到我的个人空间</h1>
+      </div>
+      <div class="zhongbu">
+        <p style="font-size: 40px"><b>《题都城南庄》</b><br />崔护</p>
+        <ul>
+          <li>去年今日此门中</li>
+          <li>人面桃花相映红</li>
+          <li>人面不知何处去</li>
+          <li>桃花依旧笑春风</li>
+        </ul>
+        <img src=".\imges\456.jpg" alt="xiaojiejie" width="738" />
+      </div>
+
+      <div class="dibu">
+        <p>正在努力学习中...</p>
+      </div>
+    </div>
+  </body>
+</html>
